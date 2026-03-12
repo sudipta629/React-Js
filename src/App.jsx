@@ -1,17 +1,20 @@
-import ClockHeading from './components/ClockHeading';
-import ClockSlogan from './components/ClockSlogan';
-import CurrentTime from './components/CurrentTime';
-import"bootstrap/dist/css/bootstrap.min.css";
-import './App.css'
+import AppName from "./components/AppName";
+import AppTodo from "./components/AppTodo";
+import TodoItme1 from "./components/TodoItem1";
+import TodoItme2 from "./components/TodoItem2";
+import "./App.css";
 
-function App() {
+function app() {
   return (
-    <center>
-      <ClockHeading />
-      <ClockSlogan />
-      <CurrentTime /> 
+    <center className="todo-container">
+      <AppName />
+      <AppTodo />
+      <div className="todo-item">
+        <TodoItme1 />
+        <TodoItme2 />
+      </div>
     </center>
   );
 }
 
-export default App
+export default app;
